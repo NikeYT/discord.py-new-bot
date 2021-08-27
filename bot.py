@@ -69,7 +69,7 @@ async def on_ready():
 
 client.run(settings['token'])
 
-#—————————————|Timur#0530|—————————————#
+#——————————|Timur#0530|———————————#
 
 
 # shrift https://patorjk.com/software/taag/#p=display&f=Big&t=Bot
