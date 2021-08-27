@@ -65,11 +65,11 @@ async def on_ready():
 
 """)
 
-# shrift https://patorjk.com/software/taag/#p=display&f=Big&t=Bot
-
-
 #—————————————|Token|—————————————#
 
 client.run(settings['token'])
 
 #—————————————|Timur#0530|—————————————#
+
+
+# shrift https://patorjk.com/software/taag/#p=display&f=Big&t=Bot
