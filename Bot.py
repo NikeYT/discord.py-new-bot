@@ -1,9 +1,6 @@
 # discord.py-new-bot
 Is a bot for everyone. it's for free.
 
-
-#—————————————|Import's|—————————————#'
-
 import discord
 import os
 from discord.ext.commands import Bot
@@ -14,41 +11,33 @@ import random
 from discord import Game
 from asyncio import sleep
 import asyncio
-from configur import settings # "configur" - your config
-
-bot = discord.Client()
+from configur import settings
 
 client = discord.Client()
 
-bot = commands.Bot(command_prefix = settings['prefix']) # prefix
+bot = discord.Client()
 
-#—————————————|Embed's|—————————————#
+bot = commands.Bot(command_prefix = settings['prefix'])
 
 @bot.command()
 async def embed(ctx):
     e = discord.Embed(
     title= input("Title: "),
     description= input("Description: "),
-    color=0xFF0000 # color
+    color=0xFF0000
     )
     await ctx.send(embed=e)
 
-#—————————————|Commands|—————————————#
-
 @bot.command()
-async def h(ctx):
+async def ping(ctx):
     author = ctx.message.author
     await ctx.send("Hello \nEveryone")
-
-#—————————————|Status|—————————————#
 
 @client.event
 async def on_ready():
 	await client.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name='TikTok'))
 
-#—————————————|Hub|—————————————#
-
-	print('Bot Love is online') # "Love or ..."
+	print('Bot Games is online')
 	print(client.user.name)
 	print('-----------')
 	name = input("Your nickname: ")
@@ -65,11 +54,9 @@ async def on_ready():
 
 """)
 
-#—————————————|Token|—————————————#
+bot.run(settings['token'])
 
-client.run(settings['token'])
-
-#——————————|Timur#0530|———————————#
+#————————|Timur#0530|———————————#
 
 
 # shrift https://patorjk.com/software/taag/#p=display&f=Big&t=Bot
