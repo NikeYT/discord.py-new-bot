@@ -19,6 +19,8 @@ bot = discord.Client()
 
 bot = commands.Bot(command_prefix = settings['prefix'])
 
+# embeds
+
 @bot.command()
 async def embed(ctx):
     e = discord.Embed(
@@ -28,10 +30,14 @@ async def embed(ctx):
     )
     await ctx.send(embed=e)
 
+# commands
+
 @bot.command()
 async def ping(ctx):
     author = ctx.message.author
     await ctx.send("Hello \nEveryone")
+
+# Status
 
 @client.event
 async def on_ready():
@@ -54,9 +60,6 @@ async def on_ready():
 
 """)
 
+# Token
+
 bot.run(settings['token'])
-
-#————————|Timur#0530|———————————#
-
-
-# shrift https://patorjk.com/software/taag/#p=display&f=Big&t=Bot
