@@ -5,4 +5,4 @@ shrift - https://patorjk.com/software/taag/#p=display&f=Big&t=Bot
 
 my discord - Timur$0530
 
-create a bot - https://discord.com/developers
+# create a bot - https://discord.com/developers
