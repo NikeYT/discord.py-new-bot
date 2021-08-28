@@ -43,13 +43,13 @@ async def ping(ctx):
 async def on_ready():
 	await client.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name='TikTok'))
 
-	print('Bot Games is online')
-	print(client.user.name)
-	print('-----------')
-	name = input("Your nickname: ")
-	print(f" Приветик папочка~ мурр)")
-	print('-----------')
-	print ("""\
+print('Bot Games is online')
+print(client.user.name)
+print('-----------')
+name = input("Your nickname: ")
+print(f" Приветик папочка~ мурр)")
+print('-----------')
+print ("""\
 
   ____        _   
  |  _ \      | |  
