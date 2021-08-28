@@ -39,26 +39,20 @@ async def ping(ctx):
 
 # Status
 
-@client.event
+@bot.event
 async def on_ready():
-	await client.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name='TikTok'))
-
-print('Bot Games is online')
-print(client.user.name)
-print('-----------')
-name = input("Your nickname: ")
-print(f" Приветик папочка~ мурр)")
-print('-----------')
-print ("""\
-
+	name = input("Your nickname: ")
+	print(f" Приветик папочка~ мурр)")
+	print ("""\
   ____        _   
  |  _ \      | |  
  | |_) | ___ | |_ 
  |  _ < / _ \| __|
  | |_) | (_) | |_ 
  |____/ \___/ \__|
-
-""")
+ """)
+ 
+	await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.watching, name='Chat'))
 
 # Token
 
